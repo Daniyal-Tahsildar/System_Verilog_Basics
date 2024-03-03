@@ -14,7 +14,7 @@ module sample_Q;
     // A for loop to populate intQ with unique elements
         for(int i = 0; i < 30;) begin
             number = $urandom_range(100, 129);
-            if(!(number inside {intQ})) begin
+            if(!(number inside {intQ})) begin  // the inside operator has been discussed in operators section
                 intQ.push_back(number);
             //$display("number = %d" , number);
                 i = i+1;
@@ -36,7 +36,7 @@ module sample_Q;
         
         $display("intQ_2 after reverse = %p" , intQ_2);
       
-    //poping at specific location from queue and then deleting the element
+//poping at specific location from queue and then deleting the element
         $display("Poping at specific location, current size = %0d", intQ_2.size());
         data = intQ_2[5];
         intQ_2.delete(5);

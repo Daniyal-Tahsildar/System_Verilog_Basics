@@ -38,6 +38,7 @@ module dynamic_array;
         intDA_2 = intDA; 
         $display("intDA_2 = %p", intDA_2);
 
+        
 // Dynamic array methods:
 // 1.   Another way of new[]    
     // The following copies the elements of intDA to a new array intDA_3,

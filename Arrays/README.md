@@ -1,4 +1,4 @@
-<h3 align="left">## Directory Specifications: </h3>
+## Directory Specifications:
 
 This directory contains example code illustrating different types of arrays used in `SystemVerilog`.
 

@@ -39,10 +39,10 @@ module queue;
         $display("String data in queue: \n\tstringQ = %p", stringQ);
         
 
-// insering elements in a queue can be done using Q-name.insert(index-position, data );
+// insering elements in a queue can be done using Q_name.insert(index-position, data);
         stringQ.insert(1, "inserted_data");
         $display("String queue after data insertion: \n\tstringQ = %p", stringQ);
-    //*** If a queue has hit the maximum storage limit, data cannot be inserted, the insert() operation returs the 
+    //*** If a queue has hit the maximum storage limit, data cannot be inserted, the insert() operation returns the 
     // queue as it is with a "Queue operation would exceed max" warning ***
 
 

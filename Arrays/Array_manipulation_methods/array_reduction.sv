@@ -65,7 +65,7 @@ module array_reduction;
     // NOTE: *******************************************************************
         // The result of sum() for bitAA is incorrect, this is because, the sum() method truncates
         // the result obtained to the type of the array (bit [8:0] in this case), to resolve this 
-        // issue, we can use the with() clause as shown belowto forcibly extend the width of the 
+        // issue, we can use the with() clause as shown below to forcibly extend the width of the 
         // result to accomodate additional bits
 
     // *************************************************************************

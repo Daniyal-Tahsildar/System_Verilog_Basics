@@ -1,5 +1,5 @@
 module sample_AA;
-// assosciative arrays behave similar to linked 
+// associative arrays behave similar to linked 
 // lists and keep track of next and prev indices
     bit [8:0] bitAA [integer];
     bit [8:0] data;

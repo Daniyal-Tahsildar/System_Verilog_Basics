@@ -22,9 +22,7 @@ The suggested reading order begins with foundational concepts, starting from dat
   - Explore various queue types, associative arrays, and array methods such as searching, ordering, and reduction methods.
 
 #
- 
-TODO:
-Update Readme,
+
 
 Coming soon:
 OOPs in SV, classes, functions, testbench components, Inter-process synchronization

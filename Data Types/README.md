@@ -1,30 +1,29 @@
 ## Directory Specifications:
 
-This directory contains example code illustrating different types of arrays used in `SystemVerilog`.
+This directory contains example code illustrating different data types used in `SystemVerilog`.
 
 *The suggested order to read the files is as follows:*
 
-- **[Packed and Unpacked arrays](packed_unpacked_arrays.sv):**
-  - Explains the distinction in memory allocation and array operations between packed and unpacked arrays.
+- **[Integral and Real type](integral_and_real.sv):**
+  - Delves into different integral and real data types, covering default values and sizes.
+  - Explores the flexibility of switching default values between signed and unsigned.
 
-- **[Multidimensional arrays](multidimentional_arrays.sv):**
-  - Discusses various methods of declaring multidimensional arrays, array allocation, and memory utilization.
+- **[Strings](strings.sv):**
+  - Discusses various string manipulation methods and conversions.
 
-- **[Dynamic arrays and Static arrays](dynamic_arrays.sv):**
-  - Highlights the differences between static and dynamic arrays.
-  - Demonstrates different usage scenarios of `new()` and other dynamic array methods.
+- **[Enum type](enum_type.sv):**
+  - Demonstrates diverse applications of enums and customizing default values.
+  - The [Example](complex%20examples/FSM_using_typedef_enum.sv) showcases how enums can streamline FSM code design. 
  
-- **[Queues](queues.sv):**
-  - Explores different queue types, data allocation, and access methods.
-  - The [Example](queue_and_DA.sv) showcases how queues integrate with Dynamic arrays and accessing queue elements at specific locations.
+- **[User-Defined types](user_defined.sv):**
+  - Examines various uses of `typedef` and the creation of queues with user-defined types.
+  - The [Example](complex%20examples/typedef_class.sv) illustrates how `typedef` facilitates arrays of queues of class types.
 
-- **[Associative arrays](associative_arrays):**
-  - Illustrates various ways of declaring associative arrays and accessing elements.
-  - Explains how queues can be assigned associative array data and index values.
-  - Presents different associative array methods.
-  - Offers an example demonstrating associative arrays' behavior as linked lists.
+- **[Structure type (struct)](structure_type):**
+  - Illustrates the creation of structures using `struct` and the establishment of queues containing struct elements.
+  - The [Example](complex%20examples/sort_using_struct.sv) demonstrates the benefits of using `struct` when managing multiple SV objects.
 
-- **[Array manipulation methods](Array_manipulation_methods):**
-  - Encompasses searching, ordering, and reduction methods used across different array types: static arrays, dynamic arrays, queues, and associative arrays.
-  - Clarifies the usage of the `with()` clause with various examples.
-  - Discusses [array locator methods](array_locator.sv), [array ordering methods](array_ordering.sv), and [array reduction methods](array_reduction.sv) in detail.
+- **[Void type](void_type.sv):**
+  - Clarifies the usage of `void` within SystemVerilog functions through a simple class definition and function.
+ 
+

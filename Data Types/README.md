@@ -17,7 +17,7 @@ This directory contains example code illustrating different data types used in `
  
 - **[User-Defined types](user_defined.sv):**
   - Examines various uses of `typedef` and the creation of queues with user-defined types.
-  - The [Example](complex%20examples/typedef_class.sv) illustrates how `typedef` facilitates arrays of queues of class types.
+  - The [Example](complex%20examples/typedef_class.sv) illustrates how using `typedef` can create user defined arrays of queues of class types.
 
 - **[Structure type (struct)](structure_type):**
   - Illustrates the creation of structures using `struct` and the establishment of queues containing struct elements.

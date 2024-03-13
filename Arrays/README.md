@@ -27,4 +27,4 @@ This directory contains example code illustrating different types of arrays used
 - **[Array manipulation methods](Array_manipulation_methods):**
   - Encompasses searching, ordering, and reduction methods used across different array types: static arrays, dynamic arrays, queues, and associative arrays.
   - Clarifies the usage of the `with()` clause with various examples.
-  - Discusses [array locator methods](array_locator.sv), [array ordering methods](array_ordering.sv), and [array reduction methods](array_reduction.sv) in detail.
+  - Discusses [array locator methods](Array_manipulation_methods/array_locator.sv), [array ordering methods](Array_manipulation_methods/array_ordering.sv), and [array reduction methods](Array_manipulation_methods/array_reduction.sv) in detail.

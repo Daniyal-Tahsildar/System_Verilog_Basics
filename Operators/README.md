@@ -18,5 +18,5 @@ This directory contains example code illustrating different types of operators u
 - **[Streaming Operator](streaming_operator.sv):**
   - Demonstrates left and right streaming operators for SV and user-defined data types, detailing distinct behaviors for left-hand-side (LHS) and right-hand-side (RHS) assignments.
   - The [Example](pack_unpack_sample) offers a comprehensive demonstration of using the streaming operator within a class to execute pack and unpack operations.
-    - It is advisable to explore this example after becoming familiar with object-oriented concepts in SystemVerilog.
+    - It is advisable to explore this example after becoming familiar with object-oriented concepts in `SystemVerilog`.
 

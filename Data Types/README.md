@@ -16,7 +16,7 @@ This directory contains example code illustrating different data types used in `
   - The [Example](complex%20examples/FSM_using_typedef_enum.sv) showcases how enums can streamline FSM code design. 
  
 - **[User-Defined types](user_defined.sv):**
-  - Examines various uses of `typedef` and the creation of queues with user-defined types.
+  - Examines various uses of `typedef` and the creation of queues with user-defined types. (*Refer [Here](Arrays/queues.sv) to read about queues*)
   - The [Example](complex%20examples/typedef_class.sv) illustrates how using `typedef` can create user defined arrays of queues of class types.
 
 - **[Structure type (struct)](structure_type.sv):**

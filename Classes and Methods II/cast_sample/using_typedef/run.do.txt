@@ -1,0 +1,10 @@
+#compilation
+vlog testbench.sv
+
+#elaboration
+vsim top -sv_seed 37356
+
+#there are no waveforms to add
+
+#simulation
+run -all

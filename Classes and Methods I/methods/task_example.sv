@@ -1,4 +1,4 @@
-// This example code demostrates how a task is capable of executing in 0 or more simulation time 
+// This example code demonstrates how a task is capable of executing in 0 or more simulation time 
 
 class task_sample;
     

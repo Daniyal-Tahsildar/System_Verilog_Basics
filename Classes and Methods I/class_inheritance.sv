@@ -15,7 +15,7 @@ class sample_pkt;
         $display(name);
         $display("\tstart = %0d", start);
         $display("\tlen = %0d", len);
-        //$display("\tpayload = %p", payload);
+        $display("\tpayload = %p", payload);
     endfunction
 
 //constraints

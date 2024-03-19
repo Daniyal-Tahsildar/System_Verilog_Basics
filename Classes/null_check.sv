@@ -42,12 +42,11 @@ module top;
         pkt.print();
 
 // Note:
-    // without using if conditions or assert statements for checks, the simulator generates a 
-    // troublesome "bad handle or reference error" when memory allocation is unsuccessful. Debugging
-    // such errors proves challenging as many simulators fail to provide precise line numbers or file 
-    // locations where the issue occurs. Employing null checks significantly enhances debugging 
-    // capabilities by pinpointing the specific class object lacking memory allocation. This proves 
-    // invaluable, particularly when managing multiple classes.
+    // without using if conditions or assert statements for checks, the simulator generates a troublesome "bad 
+    // handle or reference error" when memory allocation is unsuccessful. Debugging such errors proves challenging
+    // as many simulators fail to provide precise line numbers or file locations where the issue occurs. Employing
+    // null checks significantly enhances debugging capabilities by pinpointing the specific class object lacking
+    // memory allocation. This proves invaluable, particularly when managing multiple classes.
         
     end
 endmodule

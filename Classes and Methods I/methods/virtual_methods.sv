@@ -20,7 +20,7 @@ class sample_pkt;
     // virtual functions can also be left empty in base class
     virtual function void fix_len();
 
-    endfunction
+    endfunction // using endfunction is optional for virtual functions provided they are kept empty
 
 //constraints
     constraint len_c{

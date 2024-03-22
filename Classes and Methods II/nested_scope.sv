@@ -3,7 +3,7 @@ class sample_1;
     typedef enum {
         GOOD = 2,
         BAD,
-        ILL
+        ILLEGAL
     }pkt_type_t;
 
     class sample_2; // nested class 1
@@ -12,7 +12,7 @@ class sample_1;
             typedef enum {
                 GOOD = 10,
                 BAD,
-                ILL
+                ILLEGAL
             }pkt_type_t;
             static pkt_type_t pkt_type;
 
@@ -22,13 +22,7 @@ class sample_1;
         endclass // nested class 2
     endclass // nested class 1
 
-    extern static function void print ();
-
 endclass
-
-function void sample_1::print ();  // scope resolution is used for extern functions
-    //empty function, functionality canbe added
-endfunction
 
 module top;
     sample_1::sample_2::sample_3 s_obj = new();

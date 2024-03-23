@@ -1,14 +1,15 @@
 ## Directory Specifications:
 
-This directory contains example code illustrating different types of arrays used in `SystemVerilog`.
+This directory contains example code explaining Object Oriented Programming in `SystemVerilog`. It discusses, properties (fields/variables), methods (tasks/functions) and their usage. 
 
 *The suggested order to read the files is as follows:*
 
-- **[Packed and Unpacked arrays](packed_unpacked_arrays.sv):**
-  - Explains the distinction in memory allocation and array operations between packed and unpacked arrays.
+- **[Simple Class](simple_class.sv):**
+  - Explains how a class is defined, its attributes and creating a class instance (object).
 
-- **[Multidimensional arrays](multidimentional_arrays.sv):**
-  - Discusses various methods of declaring multidimensional arrays, array allocation, and memory utilization.
+- **[Properties](properties):**
+  - Discusses various types of properties: protected, local, rand, randc, static and automatic.
+  - explains how different types of properties are used, enabling and disabling randomization for specific properties 
 
 - **[Dynamic arrays and Static arrays](dynamic_arrays.sv):**
   - Highlights the differences between static and dynamic arrays.

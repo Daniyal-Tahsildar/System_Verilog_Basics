@@ -25,6 +25,7 @@ module top;
 
     // the following will give an error 
         // s1.count = 5;
+        // s2.size = 6;
 
     end
 endmodule

@@ -53,7 +53,7 @@ endclass
 class sample_pkt_child_2 extends sample_pkt;
     rand bit [3:0] count;
 
-    function void print(string name = "sample_pkt_child_1");
+    function void print(string name = "sample_pkt_child_2");
     // inherites the print function from parent class and can add more as well
         super.print(name);
         $display("\tcount = %0d", count);

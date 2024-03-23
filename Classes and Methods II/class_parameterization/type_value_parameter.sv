@@ -26,45 +26,47 @@ class lifo_fifo #(bit DS_TYPE = `LIFO, type DT = int);
     endfunction
 endclass
 
+
+
 module top;
     // passing in parameter arguments
-    lifo_fifo lf_i = new(); // Default arguments are taken
-    //lifo_fifo #(.DS_TYPE(`FIFO), .DT(byte)) lf_i = new();
-    //lifo_fifo #(.DS_TYPE(`FIFO), .DT(string)) lf_i = new();
+    lifo_fifo lf_obj_1 = new(); // Default arguments are taken
+
+// changing parameters
+    lifo_fifo #(.DS_TYPE(`FIFO), .DT(byte)) lf_obj_2 = new(); // by name
+    lifo_fifo #(`FIFO, string) lf_obj_3 = new();              // by position
     int a, b;
     byte c, d;
     string e, f;
 
     initial begin
         repeat(3) begin
-        // for a, b
+    // for a, b
             a = $urandom_range(100, 150);
-            lf_i.putQ(a);
-
-        // for c, d
-            // c = $urandom_range(100, 150);
-            // lf_i.putQ(c);
-        //end
-
-        // for e, f
-        // for (int i = 0; i< 3; i++) begin
-            // e = $sformatf("this is e[%0d]", i);
-            // lf_i.putQ(e);
+            lf_obj_1.putQ(a);
+    // for c, d
+            c = $urandom_range(10, 99);
+            lf_obj_2.putQ(c);
         end
 
+    // for a, b
         repeat(3) begin
-        // for a, b
-            lf_i.getQ(b);
-
-        // for c, d
-            // lf_i.getQ(d);
-
+            lf_obj_1.getQ(b);
+        end
+        
+    // for c, d
+        repeat(3) begin
+            lf_obj_2.getQ(d);
         end
 
-        // for e, f
-        // for (int i = 0; i< 3; i++) begin
-        //     lf_i.getQ(f);
-        // end
-    end
+    // for e, f
+        for (int i = 0; i< 3; i++) begin
+            e = $sformatf("this is e_data_%0d", i);
+            lf_obj_3.putQ(e);
+        end
+        for (int i = 0; i< 3; i++) begin
+            lf_obj_3.getQ(f);
+        end
 
+    end
 endmodule

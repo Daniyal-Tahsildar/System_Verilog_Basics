@@ -9,14 +9,14 @@ class sample_pkt;
     rand pkt_type_t pkt_type; //pkt_type can take any value
 
     //its good practice to keep class properties protected
-    protected bit [55:0] preamble; 
-    protected rand bit [47:0] sa;
+    protected bit [55:0] sync; 
+    protected rand bit [47:0] addr;
     protected rand bit [7:0] len;
     protected rand bit [7:0] payload[$]; //queue of octets
     protected static int count;
 //methods
     function new();
-        preamble = {28{2'b10}};
+        sync = {28{2'b10}};
         count++;  //everytime sample_pkt class has new instantiation, count gets incremented
     endfunction
 
@@ -30,8 +30,8 @@ class sample_pkt;
        
 //constraints
 //these constraints are only for sample puropses, they hold no explicit meaning
-    constraint sa_c{
-        sa inside {[100:150]};
+    constraint addr_c{
+        addr inside {[100:150]};
     }
 
     constraint len_c{
@@ -58,8 +58,8 @@ endclass
 function void sample_pkt::print(string name = "sample_pkt");
     $display(name);
     $display("\tpkt_type = %s", pkt_type);
-    $display("\tpreamble = %h", preamble);
-    $display("\tsa = %h", sa);
+    $display("\tsync = %h", sync);
+    $display("\taddr = %h", addr);
     $display("\tlen = %0d", len);
     $display("\tpayload = %p", payload);
     $display("\tcount = %0d\n", count);
@@ -68,8 +68,8 @@ endfunction
 function void sample_pkt::copy(output sample_pkt pkt);
     pkt = new();
     pkt.pkt_type = pkt_type;
-    pkt.preamble = preamble;
-    pkt.sa = sa;
+    pkt.sync = sync;
+    pkt.addr = addr;
     pkt.len = len;
     pkt.payload = payload;
     pkt.count = count;
@@ -77,8 +77,8 @@ endfunction
 
 function bit sample_pkt::compare(sample_pkt pkt);
     if ( pkt_type == pkt.pkt_type
-    && preamble == pkt.preamble 
-    && sa == pkt.sa 
+    && sync == pkt.sync 
+    && addr == pkt.addr 
     && len == pkt.len 
     && payload == pkt.payload) begin
         $display("\tPackets match");
@@ -91,12 +91,12 @@ function bit sample_pkt::compare(sample_pkt pkt);
 endfunction
 
 function void sample_pkt::pack(output byte byteQ[$]);
-    byteQ = {>>byte{preamble, sa, len, payload}};
+    byteQ = {>>byte{sync, addr, len, payload}};
 endfunction
 
 function void sample_pkt::unpack(input byte byteQ[$]);
-    preamble = {byteQ[0], byteQ[1], byteQ[2], byteQ[3], byteQ[4], byteQ[5], byteQ[6]};
-    sa = {byteQ[7], byteQ[8], byteQ[9], byteQ[10], byteQ[11], byteQ[12]};
+    sync = {byteQ[0], byteQ[1], byteQ[2], byteQ[3], byteQ[4], byteQ[5], byteQ[6]};
+    addr = {byteQ[7], byteQ[8], byteQ[9], byteQ[10], byteQ[11], byteQ[12]};
     len = byteQ[13];
     for(int i = 0; i < len; i++) begin
         payload[i] = byteQ[14+i];

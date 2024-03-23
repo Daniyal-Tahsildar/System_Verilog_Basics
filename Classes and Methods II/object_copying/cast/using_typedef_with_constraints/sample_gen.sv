@@ -13,7 +13,9 @@ class sample_gen;
             case (pkt_b) 
                 0: begin
                     good_pkt = new();
-                    assert(good_pkt.randomize()); // no need to add in-line constraints since constraints are already added in derieved class
+    // no need to add in-line constraints since constraints 
+    // are already added in derieved class
+                    assert(good_pkt.randomize()); 
                     common::gen2drv_mbox.put(good_pkt);
                 end
                 1: begin
@@ -30,6 +32,4 @@ class sample_gen;
         end
 
     endtask
-    
-
 endclass

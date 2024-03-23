@@ -19,6 +19,7 @@ module top;
         $display("s1 = %p", s1);
 
         //change in one will reflect in the other
+        $display("Changing S1 field");
         s1.a = 55;
         $display("s2 = %p", s2);
         $display("s1 = %p", s1);

@@ -14,6 +14,7 @@ class sample_pkt;
 //For polymorphism to work, function prototype should be same
     virtual function void print(string name = "sample_pkt");
         $display(name);
+        $display("\tpkt_t = %0s", pkt_t);
         $display("\tlen = %0d", len);
         $display("\tpayload = %p", payload);
         $display("\tcount = %0d\n", count);

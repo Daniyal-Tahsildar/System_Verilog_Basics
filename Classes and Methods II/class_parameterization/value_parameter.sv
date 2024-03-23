@@ -19,24 +19,29 @@ class lifo_fifo #(bit DS_TYPE = `LIFO);
     endfunction
 endclass
 
+
+
 module top;
-    // passing in parameter arguments
-    lifo_fifo #(.DS_TYPE(`FIFO)) lf_i = new();
+    // passing in parameter arguments by name
+    lifo_fifo #(.DS_TYPE(`FIFO)) lf_obj = new();
+
+    // passing in parameter arguments by position
+    // lifo_fifo #(`FIFO) lf_obj = new();
+
     int a, b;
 
     initial begin
         repeat(3) begin
             a = $urandom_range(100, 150);
-            lf_i.putQ(a);
+        // Pushing data in  
+            lf_obj.putQ(a);
             $display("\ta = %0d", a);
-
         end
 
         repeat(3) begin
-            lf_i.getQ(b);
-            $display("\tb = %0d", b);
-
+        // poping data 
+            lf_obj.getQ(b);
         end
-    end
 
+    end
 endmodule

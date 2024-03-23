@@ -11,7 +11,9 @@ class sample_drv;
             common::gen2drv_mbox.get(pkt);
             case(pkt.pkt_t)
                 GOOD: begin
-                // derived class casted from a base class (base class object casted to a derived class object)
+
+    // derived class casted from a base class (base class 
+    // object casted to a derived class object)
                     $cast(good_pkt, pkt);
                     good_pkt.print();
                 end

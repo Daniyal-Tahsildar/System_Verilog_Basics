@@ -8,7 +8,7 @@ class sample_gen;
 
     task run();
         repeat (10) begin
-            pkt_b = $urandom_range(0, 2);   
+            pkt_b = $urandom_range(0, 2);   // used to generate ggod, bad and ill packets randomly
             case (pkt_b) 
                 0: begin
                     good_pkt = new();

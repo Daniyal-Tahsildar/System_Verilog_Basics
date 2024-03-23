@@ -24,6 +24,7 @@ module top;
     sample_env env;
     
     initial begin
+        $display("pkt_b = 0: GOOD pkt, pkt_b = 1: BAD pkt, pkt_b = 2: ILL pkt");
         env = new();
         env.run();
 

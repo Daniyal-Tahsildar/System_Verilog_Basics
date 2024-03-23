@@ -11,7 +11,7 @@ typedef class common;
 // if forward declaration is done, no need to put include files in order
 `include "common.sv"
 `include "sample_env.sv"
-`include "sample_pkt_i_p.sv"
+`include "sample_pkt.sv"
 `include "sample_gen.sv"
 `include "sample_drv.sv"
 

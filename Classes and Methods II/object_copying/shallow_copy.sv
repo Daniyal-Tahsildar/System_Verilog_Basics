@@ -31,14 +31,17 @@ module top;
         s2.print("s2");
 
         //change in one will not reflect in the other for non-objects
+        $display("Changing S1 field");
         s1.a = 55;
         s1.print("s1");
         s2.print("s2");
 
         //changing count value for s1
+        $display("Changing base class count for S1");
         s1.s.count = 50;
         // count will reflect in both s1 and s2 since its an object field
         s1.print("s1");
         s2.print("s2");
+        
     end
 endmodule

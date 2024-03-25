@@ -26,4 +26,4 @@ This directory contains example code illustrating different usecases of casting.
 
 - **[Cast using a typedef and class constraints](using_typedef_with_constraints):**
   - Each packet class implements its own constraints, eliminating the need for inline constraints in the generator.
-  - Changes are made in [sample_pkt.sv](using_typedef/sample_pkt.sv) and [sample_gen.sv](using_typedef/sample_gen.sv).
+  - Changes are made in [sample_pkt.sv](using_typedef_with_constraints/sample_pkt.sv) and [sample_gen.sv](using_typedef_with_constraints/sample_gen.sv).

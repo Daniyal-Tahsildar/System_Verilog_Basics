@@ -134,7 +134,9 @@ endfunction
 module top;   
     sample_pkt pkt, pkt_1, pkt_2;
     byte dataQ[$];
-    bit [5:0] size;
+    
+// typedefs inside classes can be accessed using scope resolution operator 
+    sample_pkt::bit_t size;
 
     initial begin
         pkt = new();
@@ -167,5 +169,8 @@ module top;
 
     // calling update_size
         size = pkt_1.update_size(5);
+        pkt_1.pkt_type = MEDIUM;
+        size = pkt_1.update_size(5);
+
     end
 endmodule

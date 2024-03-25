@@ -20,7 +20,7 @@ This directory contains example code illustrating different usecases of casting.
     - [sample_drv.sv](using_bit_variable/sample_drv.sv): Receives packets from the generator and performs functionality based on the packet type received.
 
 - **[Cast using a typedef](using_typedef):**
-  - Utilizes a typedef to define different packet types instead of a bit vector.
+  - Utilizes a `typedef` to define different packet types instead of a bit vector.
   - Inline constraints are used to specify different packet types.
   - Modifications are made in [common.sv](using_typedef/common.sv), [sample_gen.sv](using_typedef/sample_gen.sv), and [sample_drv.sv](using_typedef/sample_drv.sv). The transaction class ([sample_pkt.sv](using_typedef/sample_pkt.sv)) now uses an enum type instead of a bit vector for packet types.
 

@@ -1,34 +1,36 @@
 ## Directory Specifications:
 
-This directory is a continuation of **[Classes and Methods I](Classes%20and%20Methods%20I)** that devels deeper into Object Oriented Programming in `SystemVerilog`. It consists of complex examples that demonstrates advance features available for classes and methods.
+This directory is a continuation of **[Classes and Methods I](Classes%20and%20Methods%20I)** that delves deeper into Object-Oriented Programming in `SystemVerilog`, featuring complex examples showcasing advanced features for classes and methods.
 
 *The suggested order to read the files is as follows:*
 
 - **[Extern Methods](extern_usage.sv):**
-  - demonstrates the use of `extern` for methods.
+  - Demonstrates `extern` usage for methods and scope resolution for assigning these methods to their respective classes.
+  - Illustrates `typedef` usage inside a class as a return argument for extern methods.
 
 - **[Constant Class Properties](const_class_property.sv):**
-  - Discusses various methods of declaring multidimensional arrays, array allocation, and memory utilization.
+  - Explores the usage of `const` properties, emphasizing the distinction between global constant and instance constant.
 
 - **[Pure Virtual Methods](pure_virtual.sv):**
-  - Highlights the differences between static and dynamic arrays.
-  - Demonstrates different usage scenarios of `new()` and other dynamic array methods.
- 
-- - **[Polymorphism with Inherited Classes](inheritance_and_polymorphism):**
- 
+  - Explores abstract classes and pure virtual methods.
+  - Explains how each derived class can have different implementations of a pure virtual method.
+
+- **[Polymorphism with Inherited Classes](inheritance_and_polymorphism):**
+  - Features a simple test environment for packet transactions.
+  - Demonstrates the use of forward declaration in the top file to prevent errors.
+  - Shows how polymorphism operates in a test environment where different derived classes are assigned to a base class, and the implemented functionality is selected according to the assigned derived class.
+
 - **[Class Parameterization](class_parameterization):**
-  - Explores different queue types, data allocation, and access methods.
-  - The [Example](queue_and_DA.sv) showcases how queues integrate with Dynamic arrays and accessing queue elements at specific locations.
+  - Explores parameterized classes, covering value and type parameterization.
+  - Demonstrates how class objects behave differently based on parameterization and its usage in derived classes.
 
 - **[Interface Classes](interface_class.sv):**
-  - Illustrates various ways of declaring associative arrays and accessing elements.
-  - Explains how queues can be assigned associative array data and index values.
-  - Presents different associative array methods.
-  - Offers an example demonstrating associative arrays' behavior as linked lists.
+  - Illustrates implementing interface classes for a FIFO.
+  - Explains parameterization's role in interface classes.
 
 - **[Nested Classes](nested_scope.sv):**
-  - Encompasses searching, ordering, and reduction methods used across different array types: static arrays, dynamic arrays, queues, and associative arrays.
-  - Clarifies the usage of the `with()` clause with various examples.
-  - Discusses [array locator methods](Array_manipulation_methods/array_locator.sv), [array ordering methods](Array_manipulation_methods/array_ordering.sv), and [array reduction methods](Array_manipulation_methods/array_reduction.sv) in detail.
- 
-- - **[Object Copying](object_copying):**
+  - Explains nested classes and how to access different levels of the nest using scope resolution.
+
+- **[Object Copying](object_copying):**
+  - Demonstrates various methods of copying class instances: copy by handle, shallow copy, deep copy, and casting.
+  - The casting section illustrates how casting works for test environments. Please refer to the [README](object_copying/cast//README.md) for more details. 

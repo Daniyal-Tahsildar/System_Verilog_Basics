@@ -11,7 +11,7 @@ This directory contains example code illustrating different usecases of casting.
 - **[Cast using a bit variable](using_bit_variable):**
   - Demonstrates dynamic casting in a test environment by assigning different packet types based on a bit vector value.
   - Utilizes inline constraints to specify different packet types.
-  - File Specifications:
+  - ***File Specifications***:
     - [top.sv](using_bit_variable/top.sv): Contains the top module running the test environment.
     - [common.sv](using_bit_variable/common.sv): Includes common parameters required by the test environment. (Mailboxes are discussed in the Inter-process synchronization section - [TODO]().)
     - [sample_pkt.sv](using_bit_variable/sample_pkt.sv): Transaction class with different types of packets derived from it.

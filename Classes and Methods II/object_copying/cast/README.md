@@ -24,6 +24,6 @@ This directory contains example code illustrating different usecases of casting.
   - Inline constraints are used to specify different packet types.
   - Modifications are made in [common.sv](using_typedef/common.sv), [sample_gen.sv](using_typedef/sample_gen.sv), and [sample_drv.sv](using_typedef/sample_drv.sv). The transaction class ([sample_pkt.sv](using_typedef/sample_pkt.sv)) now uses an enum type instead of a bit vector for packet types.
 
-- **[Cast using a typedef class constraints](using_typedef_with_constraints):**
+- **[Cast using a typedef and class constraints](using_typedef_with_constraints):**
   - Each packet class implements its own constraints, eliminating the need for inline constraints in the generator.
   - Changes are made in [sample_pkt.sv](using_typedef/sample_pkt.sv) and [sample_gen.sv](using_typedef/sample_gen.sv).

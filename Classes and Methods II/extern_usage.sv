@@ -14,6 +14,10 @@ class sample_pkt;
     protected rand bit [7:0] len;
     protected rand bit [7:0] payload[$]; //queue of octets
     protected static int count;
+// typedef declaration inside class
+    typedef bit [5:0] bit_t;
+    protected static bit_t size;
+
 //methods
     function new();
         sync = {28{2'b10}};
@@ -27,6 +31,8 @@ class sample_pkt;
     extern function bit compare(sample_pkt pkt);
     extern function void pack(output byte byteQ[$]);
     extern function void unpack(input byte byteQ[$]);
+    extern function bit_t update_size (input bit_t size);
+
        
 //constraints
 //these constraints are only for sample puropses, they hold no explicit meaning
@@ -107,11 +113,28 @@ function void sample_pkt::unpack(input byte byteQ[$]);
     if (len inside {[101:255]}) pkt_type = LARGE;
 endfunction
 
+function sample_pkt::bit_t sample_pkt::update_size (input bit_t size);
+    if (pkt_type == SMALL) begin
+        this.size = size + 15;      
+    end
+    else if (pkt_type == MEDIUM) begin
+        this.size = size + 30;      
+    end
+    if (pkt_type == LARGE) begin
+        this.size = size + 45;      
+    end
+
+    $display("size changed from %0d to %0d", size, this.size);
+    return size;
+endfunction
+
+
 
 // Top module
 module top;   
     sample_pkt pkt, pkt_1, pkt_2;
     byte dataQ[$];
+    bit [5:0] size;
 
     initial begin
         pkt = new();
@@ -141,5 +164,8 @@ module top;
     //printing
         pkt_1.print("sample_pkt_1");
         pkt_2.print("sample_pkt_2");
+
+    // calling update_size
+        size = pkt_1.update_size(5);
     end
 endmodule

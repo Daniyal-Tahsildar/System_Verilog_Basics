@@ -1,6 +1,6 @@
 ## Directory Specifications:
 
-This directory is a continuation of **[Classes and Methods I](Classes%20and%20Methods%20I)** that delves deeper into Object-Oriented Programming in `SystemVerilog`, featuring complex examples showcasing advanced features for classes and methods.
+This directory is a continuation of **[Classes and Methods I](../Classes%20and%20Methods%20I)** that delves deeper into Object-Oriented Programming in `SystemVerilog`, featuring complex examples showcasing advanced features for classes and methods.
 
 *The suggested order to read the files is as follows:*
 

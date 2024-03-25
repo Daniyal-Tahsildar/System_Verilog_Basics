@@ -33,4 +33,4 @@ This directory is a continuation of **[Classes and Methods I](../Classes%20and%2
 
 - **[Object Copying](object_copying):**
   - Demonstrates various methods of copying class instances: copy by handle, shallow copy, deep copy, and casting.
-  - The casting section illustrates how casting works for test environments. Please refer to the [README](object_copying/cast//README.md) for more details. 
+  - The casting section illustrates how casting works for test environments. Please refer to the [README](object_copying/cast//README.md) here for more details. 

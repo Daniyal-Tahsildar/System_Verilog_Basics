@@ -5,7 +5,7 @@ This directory is a continuation of **[Classes and Methods I](Classes%20and%20Me
 *The suggested order to read the files is as follows:*
 
 - **[Extern Methods](extern_usage.sv):**
-  - Explains the distinction in memory allocation and array operations between packed and unpacked arrays.
+  - demonstrates the use of `extern` for methods.
 
 - **[Constant Class Properties](const_class_property.sv):**
   - Discusses various methods of declaring multidimensional arrays, array allocation, and memory utilization.

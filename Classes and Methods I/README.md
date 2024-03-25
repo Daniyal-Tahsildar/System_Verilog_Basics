@@ -20,7 +20,9 @@ This repository contains illustrative code snippets to aid in understanding Obje
     
 - **[Methods](methods):**
   - Illustrates various method implementations, including `copy()` and `compare()` functions.
-  - Demonstrates task execution in simulation time and explains the use of `this`, `super`, static methods, and virtual methods.
+  - Demonstrates task execution in in 0 or more simulation time.
+  - Explains the use of `this`, `super`, static methods, and virtual methods.
+  - Insight into how derived classes can be assigned to base classes, impacting method implementations.
 
 - **[Null Check](null_check.sv):**
   - Emphasizes the importance of null checks for ensuring proper memory allocation for objects.

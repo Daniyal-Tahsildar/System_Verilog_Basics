@@ -20,10 +20,20 @@ The suggested reading order begins with foundational concepts, starting from dat
 - **[Arrays](Arrays):**
   - Understand the differences between packed and unpacked arrays, including multidimensional, static, and dynamic arrays.
   - Explore various queue types, associative arrays, and array methods such as searching, ordering, and reduction methods.
+ 
+- **[Classes and Methods I](Classes%20and%20Methods%20I):**
+  - Introduces basic class definition, attributes, object instantiation, and property types.
+  - Demonstrates inheritance, different `new()` constructor instantiations, and method implementations, including the use of `this`, `super`, static, and virtual methods.
+  - Emphasizes null checks, global vs. local scope distinction.
+ 
+- **[Classes and Methods II](Classes%20and%20Methods%20II):**
+  - Demonstrates `extern` usage and explores `const` properties.
+  - Explores abstract classes, pure virtual methods, and polymorphism operation in test environments.
+  - Illustrates parameterized and interface class implementations and demonstrates various methods of copying class instances.
 
 #
 
 
 ***Coming soon:***
 
-OOPs in SV, classes, functions, testbench components, Inter-process synchronization
+Compiler directives, Inter-process synchronization, testbench components,

@@ -28,7 +28,7 @@ This directory contains example code illustrating different data types used in `
 
  #### *NOTE:*
 - \* *Refer [Here](../Arrays/queues.sv) to learn about queues* 
-- \** *The complex example section requires knowledge of Object-Oriented Programming in `SystemVerilog`. It is recommended to explore it after familiarizing oneself with OOP concepts.*
+- \** *The complex example section requires knowledge of Object-Oriented Programming discussed [Here](../Classes%20and%20Methods%20I). It is recommended to explore it after familiarizing oneself with OOP concepts.*
 
  
 

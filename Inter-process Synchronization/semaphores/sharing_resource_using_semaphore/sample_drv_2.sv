@@ -1,4 +1,4 @@
-class sample_drv;
+class sample_drv_2;
     sample_good_pkt good_pkt;
     sample_bad_pkt bad_pkt;
     sample_illegal_pkt ill_pkt;
@@ -6,10 +6,12 @@ class sample_drv;
     //get any pkt (good, bad, ill) as sample_pkt
     sample_pkt pkt;    
     task run();
-        repeat (10) begin
+        repeat (5) begin
+            common::smp.get(1);
             common::gen2drv_mbox.get(pkt);
-            pkt.print();
+            pkt.print("sample_drv_2");
+            #1; // some delay to emulate time consumption
+            common::smp.put(1);
         end
-
     endtask
 endclass

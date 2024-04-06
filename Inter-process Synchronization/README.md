@@ -5,10 +5,10 @@ This directory contains example code illustrating different Inter-process Synchr
 *The suggested order to read the files is as follows:*
 
 - **[Mailbox](mailboxs):**
-  - 
+  - xyz
 
 - **[Event](events):**
-  - 
+  - xyz
 
 - **[Semaphore](semaphores):**
-  - 
+  - xyz

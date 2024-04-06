@@ -12,7 +12,7 @@ class c1;
     endfunction
 
     task run();
-    // pet(data) is used to put data in mailbox
+    // put(data) is used to put data in mailbox
         mbox_c1.put(a);
         mbox_c1.put(b);
         $display("Data put in mailbox:\n\t a = %0d, b = %0d", a, b);

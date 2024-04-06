@@ -4,17 +4,17 @@ This directory contains example code illustrating usage of events.
 
 *The suggested order to read the files is as follows:*
 
-- **[Simple event](simple_event.sv):**
-  - Explains the distinction in memory allocation and array operations between packed and unpacked arrays.
+- **[Simple Event](simple_event.sv):**
+  - Clarifies the differences between event triggering in `Verilog` and `SystemVerilog`.
+  - Illustrates event usage for synchronizing multiple processes.
 
-- **[Operations on event](operations_on_event.sv):**
-  - Discusses various methods of declaring multidimensional arrays, array allocation, and memory utilization.
+- **[Event Operations](operations_on_event.sv):**
+  - Explores operations such as merging events and null assignment to events.
 
 - **[Event Sequencing](event_sequencing.sv):**
-  - Highlights the differences between static and dynamic arrays.
-  - Demonstrates different usage scenarios of `new()` and other dynamic array methods.
- 
-- **[Generator and Driver event](gen_drv_event.sv):**
-  - Explores different queue types, data allocation, and access methods.
-  - The [Example](queue_and_DA.sv) showcases how queues integrate with Dynamic arrays and accessing queue elements at specific locations.
+  - Demonstrates event sequencing through `wait_order()`.
 
+- **[Generator and Driver Event](gen_drv_event.sv):**
+  - Explores event usage in testbench development with a basic generator and driver class.
+  - The generator initiates new transactions only when the driver completes the current one.
+  - Synchronization among testbench components is achieved by passing a single event to each component.

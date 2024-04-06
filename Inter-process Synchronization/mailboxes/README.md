@@ -17,8 +17,8 @@ This directory contains example code demonstrating mailbox usage.
  
 - **[Mailbox Instantiations](different_mailbox_instantiations):**
   - Explores different methods of instantiating mailboxes.
-    - [Static Mailbox](different_mailbox_instantiations/static_mbox.sv) showcases how a mailbox can be a static construct and passed around using the scope resolution operator.
-    - [Using new() Arguments](different_mailbox_instantiations/using_new_args.sv) demonstrates how a mailbox instantiated in a higher-level component can be passed as an argument to the `new` function of a class. 
+    - [Static Mailbox](different_mailbox_instantiations/static_mbox.sv): Showcases how a mailbox can be a static construct and passed around using the scope resolution operator.
+    - [Using new() Arguments](different_mailbox_instantiations/using_new_args.sv): Demonstrates how a mailbox instantiated in a higher-level component can be passed as an argument to the `new` function of a class. 
       
 - **[Using Mailboxes in Testbenches](using_mailboxes_in_testbenches):**
   - Illustrates the application of mailboxes in testbenches for transferring various types of transaction packets across different components.

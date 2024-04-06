@@ -1,3 +1,7 @@
+***Note:*** *This repository receives continuous updates. To ensure you have the latest content, consider forking or cloning it periodically.*
+
+---
+
 ## Introduction:
 SystemVerilog, an extension of Verilog, is a hardware description and verification language widely adopted in the semiconductor industry for designing and verifying complex digital systems. This repository primarily focuses on explaining SystemVerilog concepts and testbench development for verification using the language. Here, you'll find comprehensive explanations, examples, best practices and variations for SystemVerilog methods and functions usage whereever applicable. 
 

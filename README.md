@@ -1,3 +1,7 @@
+***Note:*** *This repository receives continuous updates. To ensure you have the latest content, consider forking or cloning it periodically.*
+
+---
+
 ## Introduction:
 SystemVerilog, an extension of Verilog, is a hardware description and verification language widely adopted in the semiconductor industry for designing and verifying complex digital systems. This repository primarily focuses on explaining SystemVerilog concepts and testbench development for verification using the language. Here, you'll find comprehensive explanations, examples, best practices and variations for SystemVerilog methods and functions usage whereever applicable. 
 
@@ -32,10 +36,19 @@ The suggested reading order begins with foundational concepts, starting from dat
   - Demonstrates `extern` usage and explores `const` properties.
   - Explores abstract classes, pure virtual methods, and polymorphism operation in test environments.
   - Illustrates parameterized and interface class implementations and demonstrates various methods of copying class instances.
+ 
+- **[Compiler Directives](Compiler%20Directives):**
+  - Introduces the functionality of `'define` and `'undef`.
+  - Demonstrates the creation of methods using `'define`, and illustrates the application of conditional directives,
+
+- **[Inter-process Synchronization](Inter-process%20Synchronization):**
+  - Introduction to creating mailboxes, events, semaphores and  exploring their methods.
+  - Understanding parameterized and non-parameterized mailboxes. Insights into event and semaphore usage,
+  - Practical application of mailboxes, events, and semaphores in testbench development.
 
 #
 
 
 ***Coming soon:***
 
-Compiler directives, Inter-process synchronization, fork-join, testbench components,
+Interfaces, fork-join, testbench components, packages, coverage, assertions, Constraints, CRV

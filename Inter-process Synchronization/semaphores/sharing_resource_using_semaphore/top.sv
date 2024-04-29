@@ -4,7 +4,7 @@
 // Driver_1 requires #3 timesteps to complete transactions, while Driver_2 
 // requires #1 timestep, only 1 driver can drive signals at any given time, 
 // and the resources are limited to 1 generator and 1 mailbox, without using 
-// semaphores achieving this kind of synchornization whould prove difficult.
+// semaphores achieving this kind of synchronization would prove difficult.
 
 
 //forward declaration

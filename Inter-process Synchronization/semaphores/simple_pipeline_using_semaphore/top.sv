@@ -17,6 +17,7 @@ module tb;
     task reset_all();
         pif.DATA = '0;   
         pif.ADDR= '0; 
+        pif.ready= '0; 
         pif.count = '0; 
     endtask
     
@@ -26,9 +27,16 @@ module tb;
         assert(s1.randomize());
         s1.run();
     end
+
+    initial begin
+        while (1) begin
+            repeat(2) @(posedge clk);
+            pif.ready = $random;
+        end
+    end
     
     initial begin
-        wait (pif.count == 16);
+        wait (pif.count == 4);
         @(posedge clk);
         $finish;
     end

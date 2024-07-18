@@ -20,6 +20,6 @@ This directory hosts illustrative code snippets showcasing different Inter-proce
 
 </br>
 
- *Note: 
-  - For further details, refer to the README file in each respective directory.
-  - Refer [Here](../Arrays/queues.sv) to learn about fork-join.*
+ *Note:* 
+  - *For further details, refer to the README file in each respective directory.*
+  - *Refer [Here](../Arrays/queues.sv) to learn about **fork-join**.*
